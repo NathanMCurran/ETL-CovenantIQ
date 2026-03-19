@@ -1,4 +1,4 @@
-# FastAPI Controller/Router/View Example
+I used Claude for the initial design and architecture of the project, then tested a variety of scenarios to verify that it was working across different file formats and edge cases. I then reviewed the codebase to ensure the code quality, structure, and maintainability were up to standard.
 
 Install:
 ```bash
@@ -11,13 +11,11 @@ uvicorn app.main:app --reload
 ```
 
 Open http://127.0.0.1:8000/
-
-                    E       
+    
 curl -X POST "http://127.0.0.1:8000/transforms" \
   -F "name={file_name}" \
   -F "transformer={Transform1|Transform2}" \
   -F "file={@path_to_excel_file}"  
-
 
 How to run Transformer 1 with file in current directory
 curl -X POST "http://127.0.0.1:8000/transforms" \
